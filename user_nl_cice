@@ -1,0 +1,26 @@
+&lw_prescribed_nml 
+ model_year_align =  1 
+ prescribed_lw = .true. 
+ prescribed_lw_fill = .false. 
+ stream_domareaname = 'area' 
+ stream_domfilename = '/home/p/pjk/aaudette/Yannicks_files/SIV_PAMIP-6.1_cesm1.2_amipII.nc' 
+ stream_dommaskname = 'mask' 
+ stream_domtvarname = 'time' 
+ stream_domxvarname = 'lon' 
+ stream_domyvarname = 'lat' 
+ stream_fldfilename = '/home/p/pjk/aaudette/Yannicks_files/SICSIT_PAMIP-6.1_cesm1.2_amipII.nc' 
+ stream_fldvarname = 'aice_target' 
+ sithick_fldvarname = 'hice_target'
+ stream_year_first = 1 
+ stream_year_last =  1
+ nh_nudge = .true. 
+ sh_nudge = .true. 
+
+ bot_nudge_timescale = 1
+ lat_nudge_timescale = 1
+ / 
+!----------------------------------------------------------------------------------
+! Users should add all user specific namelist changes below in the form of 
+!   namelist_var = new_namelist_value 
+! Note - that it does not matter what namelist group the namelist_var belongs to
+!----------------------------------------------------------------------------------
